@@ -20,5 +20,5 @@ output "client_id"{
 
 output "client_secret"{
     description = "Secret of the service principal"
-    value = azuread_service_principal.aks_spn.value
+    value = azuread_service_principal_password.main.value
 }

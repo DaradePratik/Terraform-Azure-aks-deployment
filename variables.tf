@@ -12,3 +12,8 @@ variable "location" {
   description = "The name of the Service Principal to be created for AKS."
   type        = string
  }
+
+ variable "Keyvault_name" {
+  description = "The name of the Key Vault to be created."
+  type        = string
+ }

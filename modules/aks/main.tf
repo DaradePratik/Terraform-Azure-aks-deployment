@@ -56,3 +56,8 @@ resource "azurerm_key_vault_secret" "ssh_private_key" {
   key_vault_id = var.key_vault_id
 }
 
+resource "local_file" "kubeconfig" {
+  depends_on   = [module.aks]
+  filename     = "./kubeconfig"
+  content      = module.aks.config
+}

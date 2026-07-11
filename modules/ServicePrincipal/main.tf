@@ -12,5 +12,4 @@ resource "azuread_service_principal" "aks_spn" {
 
 resource "azuread_service_principal_password" "main" {
     service_principal_id = azuread_service_principal.aks_spn.id
-  
 }

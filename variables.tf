@@ -17,3 +17,8 @@ variable "location" {
   description = "The name of the Key Vault to be created."
   type        = string
  }
+
+ variable "aks_cluster_name" {
+  description = "Name of the aks cluster"
+  type = string
+}

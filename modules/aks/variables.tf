@@ -10,7 +10,7 @@ variable "service_principal_name" {
   type = string
 }
 
-variable "aks_cluster_name" {
+variable "name" {
   description = "Name of the aks cluster"
   type = string
 }
